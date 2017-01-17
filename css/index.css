@@ -1,14 +1,26 @@
-div {
-  display: inline-block;
-  background-size: cover;
+body {
+  min-width: 996px;
+  font-family: 'Overpass Mono';
 }
 
 .gallery {
   height: 100vh;
-  position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.galleryRail {
+  display: flex;
+  justify-content: center;
+    /*min-width: 100%;*/
+  transition: all .3s ease;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
 }
 
 section.small {
@@ -36,6 +48,10 @@ background-image: url(../images/1.jpg);
 background-image: url(../images/4.jpg);
 }
 
+.big#pic3 {
+background-image: url(../images/7.jpg);
+}
+
 .small#pic1_1 {
 background-image: url(../images/2.jpg);
 }
@@ -50,4 +66,69 @@ background-image: url(../images/5.jpg);
 
 .small#pic2_2 {
 background-image: url(../images/6.jpg);
+}
+
+.small#pic2_1 {
+background-image: url(../images/8.jpg);
+}
+
+.small#pic2_2 {
+background-image: url(../images/9.jpg);
+}
+
+.galleryNav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  /*height: calc(100% - 51px);*/
+  height: 100%;
+}
+
+.galleryNav div {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.galleryNav .disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.galleryNav div::before,
+.galleryNav div::after {
+  content: '';
+  position: absolute;
+  background: white;
+}
+
+.galleryNav div::before {
+  width: 5px;
+  height: 20px;
+}
+
+.galleryNav div::after {
+  width: 20px;
+  height: 5px;
+}
+
+#prev{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#next{
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
