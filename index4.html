@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>meownized instagrid</title>
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/style4.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.mousewheel.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+     $("section.gallery").mousewheel(function(event, delta) {
+        this.scrollLeft -= (delta * 30);
+        event.preventDefault();
+     });
+    });
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <nav class="menubar">
+        <a>about me</a>
+        <a>meownized</a>
+        <a>contacts</a>
+    </nav>
+
+    <section class="gallery">
+
+      <nav class="galleryNav">
+        <div class="disabled" id="prev"></div>
+        <div id="next"></div>
+      </nav>
+
+        <section class="galleryRail">
+          <div class="big" id="pic1"></div>
+          <section class="small">
+            <div class="small" id="pic1_1"> </div>
+            <div class="small" id="pic1_2"> </div>
+          </section>
+        </section>
+
+      <section class="galleryRail">
+        <div class="big" id="pic2"></div>
+        <section class="small">
+          <div class="small" id="pic2_1"> </div>
+          <div class="small" id="pic2_2"> </div>
+        </section>
+      </section>
+
+      <section class="galleryRail">
+        <div class="big" id="pic3"></div>
+        <section class="small">
+          <div class="small" id="pic3_1"> </div>
+          <div class="small" id="pic3_2"> </div>
+        </section>
+      </section>
+
+    </section>
+
+    <footer>
+      <a>go to instagram</a>
+    </footer>
+
+  </body>
+
+</html>
