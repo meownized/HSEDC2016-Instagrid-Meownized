@@ -14,13 +14,12 @@ nav.menubar {
   height: 50vh;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .galleryRail {
   display: flex;
   justify-content: center;
-    /*min-width: 100%;*/
   transition: all .3s ease;
 }
 
