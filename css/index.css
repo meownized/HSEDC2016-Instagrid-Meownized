@@ -7,7 +7,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .galleryRail {
@@ -76,7 +76,7 @@ background-image: url(../images/8.jpg);
 background-image: url(../images/9.jpg);
 }
 
-.galleryNav {
+/*.galleryNav {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +88,6 @@ background-image: url(../images/9.jpg);
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  /*height: calc(100% - 51px);*/
   height: 100%;
 }
 
@@ -131,4 +130,4 @@ background-image: url(../images/9.jpg);
 #next{
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
-}
+}*/
